@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>URN | Campus Cd. Juárez (réplica escolar)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--mor:#56266f;--mor-osc:#44195c;--oro:#b89b5e;--txt:#222}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Roboto,Arial,sans-serif;color:var(--txt);line-height:1.5}
+h1,h2,h3,nav,.card{font-family:"Source Sans 3","Source Sans Pro",Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:3px solid var(--oro);outline-offset:2px}
+.fixed{position:fixed;top:0;left:0;right:0;z-index:20}
+.top{background:var(--mor-osc);color:#fff;height:46px;display:flex;justify-content:space-between;align-items:center;padding:0 0 0 310px;font-size:.8rem;font-weight:700;border-bottom:1px solid rgba(255,255,255,.2)}
+.top a{padding:0 14px;display:inline-block;line-height:46px;border-right:1px solid rgba(255,255,255,.2)}
+.top .ico a{width:42px;text-align:center;padding:0;border-left:1px solid rgba(255,255,255,.2);border-right:0}
+.top .ico{margin-right:300px;display:flex}
+.bar{background:rgba(86,38,111,.92);height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 60px 0 30px;border-bottom:1px solid rgba(255,255,255,.2)}
+.logo{color:#fff;font-weight:700;line-height:1;text-align:center}
+.logo b{display:block;font-family:Georgia,serif;font-size:2rem;letter-spacing:1px}
+.logo small{font-size:.6rem;letter-spacing:.5px;border-top:2px solid #fff;display:block;padding-top:2px}
+nav ul{display:flex;list-style:none;gap:72px}
+nav a{color:#fff;font-size:1.15rem;font-weight:600;letter-spacing:.5px;padding:6px 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--oro)}
+.burger{display:none;background:none;border:0;color:#fff;font-size:2rem;cursor:pointer}
+.hero{height:452px;background:linear-gradient(rgba(86,38,111,.78),rgba(86,38,111,.78)),repeating-linear-gradient(90deg,#8d7f95 0 70px,#9a8da1 70px 140px);display:flex;align-items:center;padding:60px 0 0 305px;color:#fff}
+.hero h1{font-size:3.4rem;font-weight:700}
+.mod{text-align:center;padding:50px 20px 60px;max-width:1340px;margin:0 auto}
+.mod h2{color:var(--oro);font-size:3.2rem;font-weight:700;margin-bottom:40px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1300px;margin:0 auto}
+.card{background:#55266f;color:#fff;height:191px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:2.1rem;font-weight:700;transition:background .2s}
+.card:hover{background:var(--mor-osc)}
+.card i{font-style:normal;font-size:3rem;line-height:1.1}
+hr{max-width:1296px;margin:0 auto;border:0;border-top:1px solid #ddd}
+.foto{max-width:1272px;height:695px;margin:60px auto 20px;border-radius:10px;background:linear-gradient(135deg,#d8d2de,#7d6a8d);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.4rem;font-weight:600;width:calc(100% - 40px)}
+.dir{max-width:1272px;margin:0 auto;padding:0 20px 80px}
+.dir h2{color:var(--mor);text-align:center;font-size:3rem;margin:30px 0 60px}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:1.1rem;min-width:760px}
+th,td{text-align:left;padding:12px 8px;vertical-align:top}
+th{font-weight:700;padding-bottom:18px}
+td{border-top:1px solid #e3e3e3}
+td a{color:var(--mor)}
+footer{background:linear-gradient(rgba(86,38,111,.93),rgba(86,38,111,.93)),repeating-linear-gradient(45deg,#6b4a80 0 30px,#5d3873 30px 60px);color:#fff;padding:110px 20px 120px}
+.fg{max-width:1250px;margin:0 auto;display:grid;grid-template-columns:260px 220px 1fr;gap:30px}
+.fg .logo{font-size:1.2rem}.fg .logo b{font-size:4.2rem}.fg .logo small{font-size:1.2rem}
+.soc{margin-top:30px;text-align:center;letter-spacing:22px}
+.fl{list-style:none}.fl li{margin-bottom:8px}.fl a:before{content:"› ";font-weight:700}
+.sedes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px 16px;text-align:center;font-size:.95rem}
+.sedes b{display:block;text-transform:uppercase}
+.copy{background:var(--oro);color:#fff;text-align:center;padding:42px 20px;font-size:.9rem}
+.wa{position:fixed;left:23px;bottom:80px;display:flex;align-items:center;gap:30px;z-index:30}
+.wa span{width:50px;height:50px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.7rem}
+.wa em{font-style:normal;background:#fff;color:#222;padding:8px 10px;border-radius:5px;font-size:.9rem;box-shadow:0 1px 6px rgba(0,0,0,.25)}
+.up{position:fixed;right:30px;bottom:60px;width:40px;height:40px;background:#aaa;color:#fff;border:0;font-size:1.3rem;cursor:pointer;z-index:30}
+body{padding-top:118px}
+@media(max-width:1100px){
+ .top{padding:0 10px}.top .ico{margin-right:0}
+ .burger{display:block}
+ nav{display:none;position:absolute;top:118px;left:0;right:0;background:var(--mor)}
+ nav.open{display:block}
+ nav ul{flex-direction:column;gap:0;padding:10px 30px}
+ nav li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.2)}
+ .hero{padding:60px 30px 0}
+ .cards{grid-template-columns:repeat(2,1fr)}
+ .fg{grid-template-columns:1fr}.sedes{grid-template-columns:repeat(2,1fr)}
+ .foto{height:380px}
+}
+@media(max-width:560px){.cards{grid-template-columns:1fr}.hero h1{font-size:2.4rem}.mod h2{font-size:2.4rem}.sedes{grid-template-columns:1fr}.top a:nth-child(n+3){display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="fixed">
+ <div class="top">
+  <div><a href="#">ACCESO</a><a href="#">CHIHUAHUA</a><a href="#">JUÁREZ</a></div>
+  <div class="ico"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Teléfono">✆</a><a href="#" aria-label="Correo">✉</a></div>
+ </div>
+ <div class="bar">
+  <a class="logo" href="#"><b>URN</b><small>UNIVERSIDAD</small></a>
+  <button class="burger" aria-label="Abrir menú" onclick="document.getElementById('m').classList.toggle('open')">☰</button>
+  <nav id="m"><ul>
+   <li><a href="#">Inicio</a></li><li><a href="#">¿Por qué URN?</a></li><li><a href="#">Licenciaturas</a></li><li><a href="#">Posgrados</a></li>
+   <li><a href="#">Campus</a></li><li><a href="#">Servicios escolares</a></li><li><a href="#">Unidades</a></li><li><a href="#">Contacto</a></li>
+  </ul></nav>
+ </div>
+</div>
+
+<main>
+ <section class="hero"><h1>Campus Cd. Juárez</h1></section>
+ <section class="mod">
+  <h2>Modalidad:</h2>
+  <div class="cards">
+   <a class="card" href="#"><i>💻</i>Escolarizada</a>
+   <a class="card" href="#"><i>🏫</i>Dies</a>
+   <a class="card" href="#"><i>📅</i>Sabatino</a>
+   <a class="card" href="#"><i>🖥️</i>Virtual</a>
+  </div>
+ </section>
+ <hr>
+ <div class="foto" role="img" aria-label="Foto del personal del campus">[Foto del equipo del campus]</div>
+ <section class="dir">
+  <h2>Directorio</h2>
+  <div class="tw"><table>
+   <thead><tr><th>Área</th><th>Contacto</th><th>Teléfono</th><th>Correo</th></tr></thead>
+   <tbody>
+    <tr><td>Director de Campus</td><td>Mtro. Nombre Apellido</td><td>000 000 0000 ext. 1002</td><td><a href="#">director@ejemplo.edu.mx</a></td></tr>
+    <tr><td>Sub Directora Administrativa</td><td>Lic. Nombre Apellido</td><td>000 000 0000 ext. 1006</td><td><a href="#">administrativo@ejemplo.edu.mx</a></td></tr>
+    <tr><td>Sub Directora Preparatoria</td><td>Lic. Nombre Apellido</td><td>000 000 0000 ext. 1007</td><td><a href="#">preparatoria@ejemplo.edu.mx</a></td></tr>
+    <tr><td>Sistemas</td><td>Ing. Nombre Apellido</td><td>000 000 0000 ext. 1004</td><td><a href="#">sistemas@ejemplo.edu.mx</a></td></tr>
+    <tr><td>Sub Académico</td><td>M.D.O. Nombre Apellido</td><td>000 000 0000 ext. 1011</td><td><a href="#">academica@ejemplo.edu.mx</a></td></tr>
+    <tr><td>Prácticas y Servicio Social</td><td>Lic. Nombre Apellido</td><td>000 000 0000 ext. 1013</td><td><a href="#">practicas@ejemplo.edu.mx</a></td></tr>
+    <tr><td>Titulación</td><td>Lic. Nombre Apellido</td><td>000 000 0000 ext. 1012</td><td><a href="#">titulacion@ejemplo.edu.mx</a></td></tr>
+    <tr><td>Control Escolar</td><td>Lic. Nombre Apellido</td><td>000 000 0000 ext. 1003</td><td><a href="#">control@ejemplo.edu.mx</a></td></tr>
+    <tr><td>Asesor educativo</td><td>Lic. Nombre Apellido</td><td>000 000 0000 ext. 1014</td><td><a href="#">asesor.a@ejemplo.edu.mx</a></td></tr>
+    <tr><td>Recepcionista</td><td>Nombre Apellido</td><td>000 000 0000 ext. 1008</td><td><a href="#">recepcion@ejemplo.edu.mx</a></td></tr>
+   </tbody>
+  </table></div>
+ </section>
+</main>
+
+<footer>
+ <div class="fg">
+  <div><a class="logo" href="#"><b>URN</b><small>UNIVERSIDAD</small></a><p class="soc">f &nbsp; ◎</p></div>
+  <ul class="fl"><li><a href="#">Inicio</a></li><li><a href="#">Licenciaturas</a></li><li><a href="#">Posgrado</a></li><li><a href="#">Campus</a></li><li><a href="#">Servicios Escolares</a></li><li><a href="#">Contacto</a></li><li><a href="#">Reglamento</a></li></ul>
+  <div class="sedes">
+   <div><b>Chihuahua</b>Calle y número<br>Colonia<br>(000) 000-0000</div>
+   <div><b>Nuevo Casas Grandes</b>Calle y número<br>Colonia<br>(000) 000-0000</div>
+   <div><b>Parral</b>Calle y número<br>Colonia<br>(000) 000-0000</div>
+   <div><b>Cd. Juárez</b>Calle y número<br>Colonia<br>(000) 000-0000</div>
+   <div><b>Cuauhtémoc</b>Calle y número<br>Colonia<br>(000) 000-0000</div>
+   <div><b>Delicias</b>Calle y número<br>Colonia<br>(000) 000-0000</div>
+  </div>
+ </div>
+</footer>
+<div class="copy">© 2026 Réplica escolar. Todos los derechos reservados.</div>
+
+<a class="wa" href="#" aria-label="WhatsApp"><span>✆</span><em>Envíanos un mensaje</em></a>
+<button class="up" aria-label="Subir" onclick="scrollTo({top:0})">⌃</button>
+</body>
+</html>
