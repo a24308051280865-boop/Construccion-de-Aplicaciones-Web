@@ -8,12 +8,12 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
+            background-color: #eef2fa;
         }
 
         /* Barra de navegación */
         nav {
-            background-color: #1a1a2e;
+            background-color: #002b8f;
             padding: 15px;
             text-align: center;
         }
@@ -22,14 +22,18 @@
             margin: 0 12px;
             text-decoration: none;
         }
+        nav a:hover {
+            color: #7fb2ff;
+        }
         nav .logo {
             font-weight: bold;
             font-size: 20px;
+            color: white;
         }
 
         /* Encabezado */
         header {
-            background-color: #c2007a;
+            background-color: #0047ff;
             color: white;
             text-align: center;
             padding: 40px 20px;
@@ -42,7 +46,7 @@
             padding: 20px;
         }
         h2 {
-            color: #1a1a2e;
+            color: #002b8f;
         }
         .peliculas {
             display: flex;
@@ -53,15 +57,12 @@
             width: 180px;
             text-align: center;
         }
-        .poster {
+        .pelicula img {
+            width: 100%;
             height: 240px;
-            background-color: #555;
-            color: white;
-            font-weight: bold;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            object-fit: cover;
+            display: block;
+            background-color: #cfd8ee;
         }
         .pelicula p {
             font-size: 14px;
@@ -71,7 +72,7 @@
         /* Tarjeta Club Cinépolis */
         .club {
             background-color: white;
-            border: 1px solid #ccc;
+            border: 2px solid #0047ff;
             padding: 20px;
             max-width: 350px;
             margin-top: 30px;
@@ -88,15 +89,21 @@
         .club button {
             margin-top: 15px;
             padding: 8px 16px;
-            background-color: #0066cc;
+            background-color: #0047ff;
             color: white;
             border: none;
             cursor: pointer;
         }
+        .club button:hover {
+            background-color: #002b8f;
+        }
+        .club a {
+            color: #0047ff;
+        }
 
         /* Footer */
         footer {
-            background-color: #1a1a2e;
+            background-color: #002b8f;
             color: white;
             text-align: center;
             padding: 20px;
@@ -128,35 +135,35 @@
             <h2>En cartelera</h2>
             <div class="peliculas">
                 <div class="pelicula">
-                    <div class="poster">Street Fighter</div>
+                    <img src="https://m.media-amazon.com/images/M/MV5BYjhlN2EyNGUtY2U4YS00ZTQ3LTg0NTgtNGIxZmVhMDlmMjIyXkEyXkFqcGc@._V1_.jpg" alt="Street Fighter">
                     <p>Street Fighter</p>
                 </div>
                 <div class="pelicula">
-                    <div class="poster">La Caída de la Ballena</div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGLsJjlLVa54xq_o1gn2rb2pCFNWnSOFMKMlKBxwe9rg&s" alt="La Caída de la Ballena">
                     <p>La Caída de la Ballena</p>
                 </div>
                 <div class="pelicula">
-                    <div class="poster">El Laberinto del Fauno</div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKlVWZNrAxRklJzPUzNDiZ0UZ4If2CUu-ENDYIBXsGh5A_CcBwMwPIeOc&s=10" alt="El Laberinto del Fauno">
                     <p>El Laberinto del Fauno</p>
                 </div>
                 <div class="pelicula">
-                    <div class="poster">El Corazón de la Bestia</div>
+                    <img src="https://m.media-amazon.com/images/M/MV5BMDVlMTRhMjgtMjdmZi00NjJhLWExMmYtODExNWJkZGZjNjdhXkEyXkFqcGc@._V1_.jpg" alt="El Corazón de la Bestia">
                     <p>El Corazón de la Bestia</p>
                 </div>
                 <div class="pelicula">
-                    <div class="poster">Verity: La Sombra de un Engaño</div>
+                    <img src="https://m.media-amazon.com/images/M/MV5BZDQ4MWMwZDctNjY4Ny00NjZhLWEzNDUtZmQ0NDY3NDc3ZGEyXkEyXkFqcGc@._V1_.jpg" alt="Verity: La Sombra de un Engaño">
                     <p>Verity: La Sombra de un Engaño</p>
                 </div>
                 <div class="pelicula">
-                    <div class="poster">Madre Siniestra</div>
+                    <img src="https://pimcore-content.cinepolis.com/assets/Mexico/Tickets/Movies/MadreSiniestra/Es/20_Po_ster_720x1022px__2.jpg" alt="Madre Siniestra">
                     <p>Madre Siniestra</p>
                 </div>
                 <div class="pelicula">
-                    <div class="poster">El Poder de la Red</div>
+                    <img src="https://www.citicinemas.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fciticinemas-store%2FMovie-2336%2Fposter%2FhNS04EkAKQin%2FEL%20PODER%20DE%20LA%20RED.jpg&w=1920&q=75" alt="El Poder de la Red">
                     <p>El Poder de la Red</p>
                 </div>
                 <div class="pelicula">
-                    <div class="poster">Clayface</div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrLB1BJpNvI7HPQKSAkocxUEwJ8j6UgBNqS1wQqtRS3Cbt1lhDXx8gb4Vc&s=10" alt="Clayface">
                     <p>Clayface</p>
                 </div>
             </div>
@@ -166,17 +173,17 @@
             <h2>Próximos estrenos</h2>
             <div class="peliculas">
                 <div class="pelicula">
-                    <div class="poster">Avengers: Doomsday</div>
+                    <img src="img/avengers-doomsday.jpg" alt="Avengers: Doomsday">
                     <p>Avengers: Doomsday</p>
                     <p>Estreno: 17 de diciembre</p>
                 </div>
                 <div class="pelicula">
-                    <div class="poster">BTS World Tour Arirang</div>
+                    <img src="img/bts-buenos-aires.jpg" alt="BTS World Tour Arirang Buenos Aires">
                     <p>BTS World Tour 'Arirang' (Buenos Aires)</p>
                     <p>24 de octubre</p>
                 </div>
                 <div class="pelicula">
-                    <div class="poster">BTS World Tour Arirang</div>
+                    <img src="img/bts-sao-paulo.jpg" alt="BTS World Tour Arirang São Paulo">
                     <p>BTS World Tour 'Arirang' (São Paulo)</p>
                     <p>30 de octubre</p>
                 </div>
