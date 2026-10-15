@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinépolis - Las Misiones VIP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #1a1a2e;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+        }
+        nav .logo {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #c2007a;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* Cuerpo */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            color: #1a1a2e;
+        }
+        .peliculas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .pelicula {
+            width: 180px;
+            text-align: center;
+        }
+        .poster {
+            height: 240px;
+            background-color: #555;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pelicula p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        /* Tarjeta Club Cinépolis */
+        .club {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            max-width: 350px;
+            margin-top: 30px;
+        }
+        .club label {
+            display: block;
+            margin-top: 10px;
+        }
+        .club input {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+        .club button {
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <span class="logo">cinépolis</span>
+        <a href="#cartelera">Películas</a>
+        <a href="#proximos">Próximos estrenos</a>
+        <a href="#club">Club Cinépolis</a>
+    </nav>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenido a Cinépolis</h1>
+        <p>Las Misiones VIP · Ciudad Juárez, Chihuahua</p>
+    </header>
+
+    <!-- Cuerpo -->
+    <main>
+
+        <section id="cartelera">
+            <h2>En cartelera</h2>
+            <div class="peliculas">
+                <div class="pelicula">
+                    <div class="poster">Street Fighter</div>
+                    <p>Street Fighter</p>
+                </div>
+                <div class="pelicula">
+                    <div class="poster">La Caída de la Ballena</div>
+                    <p>La Caída de la Ballena</p>
+                </div>
+                <div class="pelicula">
+                    <div class="poster">El Laberinto del Fauno</div>
+                    <p>El Laberinto del Fauno</p>
+                </div>
+                <div class="pelicula">
+                    <div class="poster">El Corazón de la Bestia</div>
+                    <p>El Corazón de la Bestia</p>
+                </div>
+                <div class="pelicula">
+                    <div class="poster">Verity: La Sombra de un Engaño</div>
+                    <p>Verity: La Sombra de un Engaño</p>
+                </div>
+                <div class="pelicula">
+                    <div class="poster">Madre Siniestra</div>
+                    <p>Madre Siniestra</p>
+                </div>
+                <div class="pelicula">
+                    <div class="poster">El Poder de la Red</div>
+                    <p>El Poder de la Red</p>
+                </div>
+                <div class="pelicula">
+                    <div class="poster">Clayface</div>
+                    <p>Clayface</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proximos">
+            <h2>Próximos estrenos</h2>
+            <div class="peliculas">
+                <div class="pelicula">
+                    <div class="poster">Avengers: Doomsday</div>
+                    <p>Avengers: Doomsday</p>
+                    <p>Estreno: 17 de diciembre</p>
+                </div>
+                <div class="pelicula">
+                    <div class="poster">BTS World Tour Arirang</div>
+                    <p>BTS World Tour 'Arirang' (Buenos Aires)</p>
+                    <p>24 de octubre</p>
+                </div>
+                <div class="pelicula">
+                    <div class="poster">BTS World Tour Arirang</div>
+                    <p>BTS World Tour 'Arirang' (São Paulo)</p>
+                    <p>30 de octubre</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inicio y/o registro con tarjeta Club Cinépolis -->
+        <section id="club">
+            <div class="club">
+                <h2>Club Cinépolis</h2>
+                <form action="#" method="post">
+                    <label for="tarjeta">Número de tarjeta</label>
+                    <input type="text" id="tarjeta" name="tarjeta" maxlength="16" placeholder="16 dígitos" required>
+
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Ingresar</button>
+                </form>
+                <p>¿No tienes tarjeta? <a href="#">Regístrate</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Cinépolis · Quiénes somos · Ayuda · Contacto</p>
+        <p>© 2026 Cinépolis. Proyecto escolar.</p>
+    </footer>
+
+</body>
+</html>
