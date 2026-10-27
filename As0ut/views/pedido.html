@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedido · As0ut</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="../index.html">AS0UT</a>
+    <nav id="nav"></nav>
+  </header>
+
+  <main class="card">
+    <h2>Haz tu pedido</h2>
+    <form id="pedido" novalidate>
+      <label>Marca
+        <select name="id_marca" id="marca" required><option value="">Cargando...</option></select>
+      </label>
+      <label>Prenda
+        <select name="prenda" required>
+          <option value="">Selecciona...</option>
+          <option>Playera</option><option>Camisa</option><option>Pantalón</option>
+          <option>Sudadera</option><option>Chamarra</option><option>Vestido</option>
+        </select>
+      </label>
+      <label>Talla
+        <select name="talla" required>
+          <option value="">Selecciona...</option>
+          <option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+      </label>
+      <label>Cantidad <input type="number" name="cantidad" min="1" max="99" value="1" required></label>
+      <label>Dirección de envío <input name="direccion" required></label>
+      <button class="btn">Confirmar pedido</button>
+    </form>
+    <p id="msg" class="msg"></p>
+  </main>
+
+  <script src="../scripts/common.js"></script>
+  <script src="../scripts/pedido.js"></script>
+</body>
+</html>

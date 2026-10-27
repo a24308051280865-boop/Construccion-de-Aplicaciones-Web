@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión · As0ut</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="../index.html">AS0UT</a>
+    <nav id="nav"></nav>
+  </header>
+
+  <main class="card">
+    <h2>Iniciar sesión</h2>
+    <form id="login" novalidate>
+      <label>Email <input type="email" name="email" autocomplete="email"></label>
+      <label>Contraseña <input type="password" name="password" autocomplete="current-password"></label>
+      <button class="btn">Entrar</button>
+    </form>
+    <p id="msg" class="msg"></p>
+    <p class="alt">¿No tienes cuenta? <a href="register.html">Crea una aquí</a></p>
+  </main>
+
+  <script src="../scripts/common.js"></script>
+  <script src="../scripts/login.js"></script>
+</body>
+</html>

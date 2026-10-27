@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro · As0ut</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="../index.html">AS0UT</a>
+    <nav id="nav"></nav>
+  </header>
+
+  <main class="card">
+    <h2>Crear cuenta</h2>
+    <form id="register" novalidate>
+      <label>Nombre <input name="firstName" autocomplete="given-name"></label>
+      <label>Apellido <input name="lastName" autocomplete="family-name"></label>
+      <label>Email <input type="email" name="email" autocomplete="email"></label>
+      <label>Contraseña <input type="password" name="password" autocomplete="new-password"></label>
+      <label>Confirmar contraseña <input type="password" name="confirm" autocomplete="new-password"></label>
+      <p class="hint">Mínimo 8 caracteres, con letras y números.</p>
+      <button class="btn">Crear cuenta</button>
+    </form>
+    <p id="msg" class="msg"></p>
+    <p class="alt">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+  </main>
+
+  <script src="../scripts/common.js"></script>
+  <script src="../scripts/register.js"></script>
+</body>
+</html>

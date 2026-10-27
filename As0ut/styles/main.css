@@ -1,0 +1,63 @@
+:root{--black:#000;--white:#fff;--gray:#6b6b6b;--line:#d9d9d9}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:300;background:var(--white);color:var(--black);min-height:100vh;display:flex;flex-direction:column}
+a{color:var(--black)}
+
+/* Encabezado */
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;border-bottom:1px solid var(--black)}
+.logo{font-size:1.3rem;letter-spacing:.35em;text-decoration:none;font-weight:400}
+nav{display:flex;gap:28px;align-items:center}
+nav a,nav button{font:inherit;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;background:none;border:0;cursor:pointer;color:var(--black);padding:0}
+nav a:hover,nav button:hover{text-decoration:underline}
+
+/* Portada */
+main{flex:1}
+.hero{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px 20px;gap:18px}
+.eyebrow{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gray);margin:0}
+.hero h1{font-size:clamp(3rem,10vw,7rem);font-weight:100;letter-spacing:.3em;margin:0 0 0 .3em}
+.lead{max-width:460px;color:var(--gray);line-height:1.7;margin:0 0 14px}
+
+/* Tarjeta de formularios */
+.card{width:100%;max-width:440px;margin:50px auto;padding:36px;border:1px solid var(--black)}
+.card h2{margin:0 0 26px;font-weight:300;font-size:1.1rem;letter-spacing:.25em;text-transform:uppercase}
+form{display:flex;flex-direction:column;gap:22px}
+label{display:flex;flex-direction:column;gap:6px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gray)}
+input,select{font:inherit;font-size:1rem;letter-spacing:normal;text-transform:none;color:var(--black);background:var(--white);border:0;border-bottom:1px solid var(--black);border-radius:0;padding:8px 0}
+input:focus,select:focus{outline:0;border-bottom-width:2px}
+
+/* Botones */
+.btn{display:inline-block;font:inherit;font-size:.78rem;letter-spacing:.25em;text-transform:uppercase;text-decoration:none;text-align:center;background:var(--black);color:var(--white);border:1px solid var(--black);padding:14px 34px;cursor:pointer}
+.btn:hover{background:var(--white);color:var(--black)}
+
+/* Mensajes y pie */
+.msg{min-height:1.2em;margin:18px 0 0;font-size:.85rem}
+.msg.ok{border-left:3px solid var(--black);padding-left:10px}
+.msg.err{border-left:3px solid var(--gray);padding-left:10px;color:var(--gray);font-style:italic}
+.alt{margin:22px 0 0;font-size:.85rem;color:var(--gray)}
+footer{text-align:center;padding:20px;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gray);border-top:1px solid var(--line)}
+/* Validaciones */
+.hint{margin:-8px 0 0;font-size:.75rem;color:var(--gray)}
+.error{display:block;font-size:.75rem;letter-spacing:.03em;text-transform:none;color:var(--black);font-style:italic}
+.error:not(:empty)::before{content:'✕ '}
+input.invalid,select.invalid{border-bottom:2px solid var(--black);background:#f2f2f2}
+.btn:disabled{opacity:.4;cursor:wait}
+
+/* Banner emergente */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;z-index:100;animation:fade .25s ease}
+.banner{background:var(--white);border:1px solid var(--black);padding:46px 50px;max-width:430px;width:90%;text-align:center;animation:pop .3s ease}
+.banner .eyebrow{margin:0}
+.banner h3{font-weight:100;font-size:1.9rem;letter-spacing:.12em;margin:12px 0 14px;word-break:break-word}
+.banner .text{color:var(--gray);line-height:1.6;margin:0 0 24px}
+.banner .bar{height:1px;background:var(--black);width:0;margin:0 auto 26px;animation:bar 4s linear forwards}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{transform:translateY(14px) scale(.97);opacity:0}to{transform:none;opacity:1}}
+@keyframes bar{to{width:100%}}
+
+/* Popup de confirmación */
+.summary{list-style:none;padding:0;margin:0 0 26px;text-align:left;border-top:1px solid var(--line)}
+.summary li{display:flex;justify-content:space-between;gap:18px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.summary span{color:var(--gray);text-transform:uppercase;letter-spacing:.15em;font-size:.7rem;padding-top:3px}
+.summary b{font-weight:400;text-align:right;word-break:break-word}
+.actions{display:flex;gap:12px;justify-content:center}
+.btn.ghost{background:var(--white);color:var(--black)}
+.btn.ghost:hover{background:var(--black);color:var(--white)}
