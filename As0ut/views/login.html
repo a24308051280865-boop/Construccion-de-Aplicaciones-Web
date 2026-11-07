@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión · As0ut</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header class="site-header" id="site-header"></header>
+
+  <main class="card">
+    <p class="eyebrow">Tu cuenta</p>
+    <h1>Iniciar sesión</h1>
+    <form id="login" novalidate>
+      <label>Email <input type="email" name="email" autocomplete="email"></label>
+      <label>Contraseña <input type="password" name="password" autocomplete="current-password"></label>
+      <button class="btn block" id="submit" type="submit">Entrar</button>
+    </form>
+    <p id="msg" class="msg" role="alert"></p>
+    <p class="alt">¿No tienes cuenta? <a href="register.html">Crea una aquí</a></p>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="../scripts/imagenes.js"></script>
+  <script src="../scripts/common.js"></script>
+  <script src="../scripts/login.js"></script>
+</body>
+</html>

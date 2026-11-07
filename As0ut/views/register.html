@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear cuenta · As0ut</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header class="site-header" id="site-header"></header>
+
+  <main class="card">
+    <p class="eyebrow">Nueva cuenta</p>
+    <h1>Crear cuenta</h1>
+    <form id="register" novalidate>
+      <label>Nombre <input name="firstName" autocomplete="given-name"></label>
+      <label>Apellido <input name="lastName" autocomplete="family-name"></label>
+      <label>Email <input type="email" name="email" autocomplete="email"></label>
+      <label>Contraseña <input type="password" name="password" autocomplete="new-password"></label>
+      <label>Confirmar contraseña <input type="password" name="confirm" autocomplete="new-password"></label>
+      <p class="hint">Mínimo 8 caracteres, con letras y números.</p>
+      <button class="btn block" id="submit" type="submit">Crear cuenta</button>
+    </form>
+    <p id="msg" class="msg" role="alert"></p>
+    <p class="alt">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="../scripts/imagenes.js"></script>
+  <script src="../scripts/common.js"></script>
+  <script src="../scripts/register.js"></script>
+</body>
+</html>
