@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Levis - Iniciar sesión</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+
+    <div class="caja">
+        <h1>LEVIS</h1>
+        <h2>Iniciar sesión</h2>
+
+        <form action="../api/login.php" method="post">
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <p>¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
+        <p><a href="../index.html">← Volver a la tienda</a></p>
+    </div>
+
+</body>
+</html>
